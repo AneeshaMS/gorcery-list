@@ -1,0 +1,95 @@
+ [
+    
+    {
+        
+        "SlNo": 1,
+        "Name":"Coconut oil",
+        "Quantity":2,
+        "Unit":"liters",
+        "Department":"Oil",
+        "Notes":"pure coconut oil"
+    },
+    {
+       
+        "SlNo": 2,
+        "Name":"Wheat Flour",
+        "Quantity":3,
+        "Unit":"kg",
+        "Department":"Flours",
+        "Notes":"chakki atta"
+    },
+    {
+        
+        "SlNo": 3,
+        "Name":"Moong Dal",
+        "Quantity":500,
+        "Unit":"grams",
+        "Department":"Pulses",
+        "Notes":"Sambar dal"
+    },
+    {
+        
+        "SlNo": 4,
+        "Name":"Milk",
+        "Quantity":2,
+        "Unit":"liters",
+        "Department":"Dairy products",
+        "Notes":"Milma Milk"
+    },
+    {
+       
+        "SlNo": 5,
+        "Name":"Cucumber",
+        "Quantity":1,
+        "Unit":"kg",
+        "Department":"Vegetables",
+        "Notes":"fresh"
+    },
+    {
+        
+        "SlNo": 6,
+        "Name":"Salt",
+        "Quantity":500,
+        "Unit":"Grams",
+        "Department":"Spices",
+        "Notes":"Pink salt"
+    },
+    {
+        
+        "SlNo": 7,
+        "Name":"Almond",
+        "Quantity":1,
+        "Unit":"kg",
+        "Department":"Nuts",
+        "Notes":"nutraj california"
+    },
+    {
+        
+        "SlNo": 8,
+        "Name":"Noodles",
+        "Quantity":3,
+        "Unit":"Packets",
+        "Department":"Pantry",
+        "Notes":"Yippee"
+    },
+
+    {
+        
+        "SlNo": 9,
+        "Name":"Apple",
+        "Quantity":2,
+        "Unit":"kg",
+        "Department":"fruits",
+        "Notes":"fresh"
+    },
+
+    {
+        
+        "SlNo": 10,
+        "Name":"Peanut Butter",
+        "Quantity":500,
+        "Unit":"Grams",
+        "Department":"Diary products",
+        "Notes":"Nutela"
+    }
+]

@@ -1,0 +1,108 @@
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>GFG User Details</title>
+  
+    <!-- INCLUDING JQUERY-->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  
+    <!-- CSS FOR STYLING THE PAGE -->
+    <style>
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 
+                'Gill Sans MT', ' Calibri', 
+                'Trebuchet MS', 'sans-serif';
+        }
+  
+        td {
+            background-color: #E4F5D4;
+            border: 1px solid black;
+        }
+  
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+  
+        td {
+            font-weight: lighter;
+        }
+    </style>
+</head>
+  
+<body>
+    <section>
+        <h1>GeeksForGeeks</h1>
+  
+        <!-- TABLE CONSTRUCTION-->
+        <table id='table'>
+            <!-- HEADING FORMATION -->
+            <tr>
+               <th>Sl.No</th>
+               <th> Name </th>
+               <th> Quantity </th>
+               <th> Unit </th>
+               <th> Department </th>
+               <th> Notes </th>
+            </tr>
+  
+            <script>
+                $(document).ready(function () {
+  
+                    // FETCHING DATA FROM JSON FILE
+                    $.getJSON("list.json", 
+                            function (data) {
+                        var lists = '';
+  
+                        // ITERATING THROUGH OBJECTS
+                        $.each(data, function (key, value) {
+  
+                            //CONSTRUCTION OF ROWS HAVING
+                            // DATA FROM JSON OBJECT
+                            lists += '<tr>';
+                                lists += '<td>' + 
+                                value.SlNo + '</td>';
+  
+                                lists += '<td>' + 
+                                value.Name + '</td>';
+  
+                                lists += '<td>' + 
+                                value. Quantity + '</td>';
+  
+                                lists += '<td>' + 
+                                value.Unit + '</td>';
+
+                                lists += '<td>' + 
+                                value.Department + '</td>';
+
+                                lists += '<td>' + 
+                                value. Notes  + '</td>';
+  
+                                lists += '</tr>';
+                        });
+                          
+                        //INSERTING ROWS INTO TABLE 
+                        $('#table').append(lists);
+                    });
+                });
+            </script>
+    </section>
+</body>
+  
+</html>
